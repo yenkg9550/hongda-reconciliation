@@ -1,0 +1,37 @@
+# Render Blueprint
+# 用法：把這個 repo 推到 GitHub，到 Render Dashboard → Blueprints → New Blueprint Instance → 選此 repo
+# 它會自動讀此檔建立服務。MONGODB_URI、CORS_ORIGINS 等環境變數需手動填入。
+
+services:
+  - type: web
+    name: hongda-reconciliation-api
+    runtime: python
+    plan: free
+    region: singapore        # singapore / oregon / frankfurt / ohio 擇一
+    rootDir: backend         # 整個 repo root，但服務只跑 backend/
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: API_V1_PREFIX
+        value: /api/v1
+      - key: MONGODB_DB
+        value: reconciliation
+      - key: WORKER_INTERVAL_SECONDS
+        value: "5"
+      - key: WORKER_MAX_RETRY
+        value: "3"
+      - key: USE_INMEMORY_FALLBACK
+        value: "false"
+      # 以下兩個請到 Render Dashboard 手動設定為 secret，別寫在這裡：
+      - key: MONGODB_URI
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false

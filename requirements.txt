@@ -1,0 +1,17 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.4
+python-multipart>=0.0.9
+
+# MongoDB（Atlas）+ GridFS
+motor>=3.5
+pymongo>=4.6
+dnspython>=2.4
+
+# 報表匯出
+openpyxl>=3.1
+
+# Misc
+python-dotenv>=1.0
+eval_type_backport>=0.2  ; python_version < "3.10"
