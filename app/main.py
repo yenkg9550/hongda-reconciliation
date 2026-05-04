@@ -57,13 +57,23 @@ def create_app() -> FastAPI:
     app.include_router(master.router, prefix=settings.api_v1_prefix, tags=["master"])
     app.include_router(reports.router, prefix=settings.api_v1_prefix, tags=["reports"])
 
-    @app.get("/", tags=["meta"], summary="Health check")
+    @app.get("/", tags=["meta"], summary="Health check (lightweight, for Render port detection)")
     async def root():
-        mongo_health = await ping()
+        # 注意：這個 endpoint 不 await Mongo，避免 Render 健康檢查超時。
+        # 要看 Mongo 連線狀態請打 /healthz。
         return {
             "name": "宏達停車場對帳系統",
             "version": "0.4.0",
             "docs": f"{settings.api_v1_prefix}/docs",
+            "storage": "MongoDB GridFS",
+        }
+
+    @app.get("/healthz", tags=["meta"], summary="Deep health check (含 Mongo ping)")
+    async def healthz():
+        mongo_health = await ping()
+        return {
+            "name": "宏達停車場對帳系統",
+            "version": "0.4.0",
             "mongodb": mongo_health,
             "storage": "MongoDB GridFS",
         }
