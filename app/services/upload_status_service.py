@@ -59,6 +59,8 @@ def _slot_status(slot: SlotDef, jobs: list[dict]) -> dict[str, Any]:
         "slot_key": slot["slot_key"],
         "source_type": slot["source_type"],
         "source_name": slot["source_name"],
+        "label": slot["label"],
+        "category": slot["category"],
         "is_required": slot["is_required"],
         "status": status,
         "message": message,

@@ -9,8 +9,10 @@ import uuid
 from datetime import date, datetime
 from typing import Any
 
-from app.db.collections import UPLOAD_JOBS
+from app.db.collections import BANK_ENTRIES, UPLOAD_JOBS
 from app.db.gridfs import compute_sha256, put_pending
+from app.db.gridfs import update_bucket_label
+from app.services.bank_parser import BankParseError, parse_bank_entries
 
 
 async def receive_upload(
@@ -69,4 +71,73 @@ async def receive_upload(
         "finished_at": None,
     }
     await db[UPLOAD_JOBS].insert_one(doc)
+
+    if source_type == "bank":
+        await _parse_bank_upload(
+            db,
+            job_id=job_id,
+            gridfs_id=str(gridfs_id),
+            file_bytes=file_bytes,
+            filename=filename,
+            source_name=source_name,
+        )
+        doc = await db[UPLOAD_JOBS].find_one({"_id": job_id})
+
     return doc, None
+
+
+async def _parse_bank_upload(
+    db: Any,
+    *,
+    job_id: str,
+    gridfs_id: str,
+    file_bytes: bytes,
+    filename: str,
+    source_name: str,
+) -> None:
+    await db[UPLOAD_JOBS].update_one(
+        {"_id": job_id},
+        {"$set": {"status": "processing", "progress": 50, "last_attempt_at": datetime.utcnow()}},
+    )
+    await update_bucket_label(gridfs_id, "processing")
+
+    try:
+        entries = parse_bank_entries(
+            file_bytes=file_bytes,
+            filename=filename,
+            source_name=source_name,
+            job_id=job_id,
+        )
+    except BankParseError as exc:
+        await db[UPLOAD_JOBS].update_one(
+            {"_id": job_id},
+            {
+                "$set": {
+                    "status": "failed",
+                    "progress": 100,
+                    "message": str(exc),
+                    "error_msg": str(exc),
+                    "finished_at": datetime.utcnow(),
+                }
+            },
+        )
+        await update_bucket_label(gridfs_id, "failed")
+        return
+
+    await db[BANK_ENTRIES].delete_many({"job_id": job_id})
+    if entries:
+        await db[BANK_ENTRIES].insert_many(entries)
+    await db[UPLOAD_JOBS].update_one(
+        {"_id": job_id},
+        {
+            "$set": {
+                "status": "done",
+                "progress": 100,
+                "row_count": len(entries),
+                "message": f"解析成功，共 {len(entries)} 筆銀行入帳",
+                "error_msg": None,
+                "finished_at": datetime.utcnow(),
+            }
+        },
+    )
+    await update_bucket_label(gridfs_id, "done")

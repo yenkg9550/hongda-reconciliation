@@ -14,10 +14,9 @@ from app.db.mongo import get_db
 from app.schemas.common import success_envelope
 from app.schemas.reconcile import M3ResolveRequest, ReconcileTriggerRequest
 from app.services.reconcile_service import (
-    ensure_stub_m3,
+    get_m1_results,
+    get_m2_results,
     serialize_m3,
-    stub_m1_results,
-    stub_m2_results,
     trigger_reconcile,
 )
 
@@ -49,9 +48,10 @@ async def get_m1(
     period_end: date = Query(...),
     venue_code: str | None = Query(None),
 ):
-    items = stub_m1_results()
-    if venue_code:
-        items = [i for i in items if i["venue_code"] == venue_code]
+    db = get_db()
+    items = await get_m1_results(
+        db, period_start=period_start, period_end=period_end, venue_code=venue_code
+    )
     return success_envelope(items)
 
 
@@ -71,9 +71,10 @@ async def get_m2(
     period_end: date = Query(...),
     venue_code: str | None = Query(None),
 ):
-    items = stub_m2_results()
-    if venue_code:
-        items = [i for i in items if i["venue_code"] == venue_code]
+    db = get_db()
+    items = await get_m2_results(
+        db, period_start=period_start, period_end=period_end, venue_code=venue_code
+    )
     return success_envelope(items)
 
 
@@ -81,7 +82,6 @@ async def get_m2(
 @router.post("/reconcile/m3", summary="觸發 M3 例外調查")
 async def trigger_m3(req: ReconcileTriggerRequest):
     db = get_db()
-    await ensure_stub_m3(db)
     job = await trigger_reconcile(db, module="m3", period_start=req.period_start, period_end=req.period_end)
     return success_envelope(
         {"job_id": job["job_id"], "job_type": "reconcile_m3", "status": job["status"], "message": job["message"]}
@@ -94,7 +94,6 @@ async def get_m3(
     resolved: bool | None = Query(None),
 ):
     db = get_db()
-    await ensure_stub_m3(db)
     query: dict = {}
     if venue_code:
         query["venue_code"] = venue_code

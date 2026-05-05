@@ -11,7 +11,7 @@ from openpyxl import Workbook
 
 from app.db.collections import M3_EXCEPTIONS
 from app.db.mongo import get_db
-from app.services.reconcile_service import REASON_LABELS, stub_m1_results, stub_m2_results
+from app.services.reconcile_service import REASON_LABELS, get_m1_results, get_m2_results
 
 router = APIRouter()
 
@@ -29,11 +29,12 @@ def _wb_to_response(wb: Workbook, filename: str) -> StreamingResponse:
 
 @router.get("/reports/m1/export", summary="匯出 M1 對帳報表")
 async def export_m1(period_start: date = Query(...), period_end: date = Query(...)):
+    db = get_db()
     wb = Workbook()
     ws = wb.active
     ws.title = "M1 電子支付對帳"
     ws.append(["場站代碼", "場站名稱", "系統商", "系統商金額", "預期撥款", "實際撥款", "差異", "狀態"])
-    for r in stub_m1_results():
+    for r in await get_m1_results(db, period_start=period_start, period_end=period_end):
         ws.append([
             r["venue_code"], r["venue_name"], r["vendor_code"],
             r["vendor_amount"], r["expected_remit"], r["actual_remit"],
@@ -44,11 +45,12 @@ async def export_m1(period_start: date = Query(...), period_end: date = Query(..
 
 @router.get("/reports/m2/export", summary="匯出 M2 對帳報表")
 async def export_m2(period_start: date = Query(...), period_end: date = Query(...)):
+    db = get_db()
     wb = Workbook()
     ws = wb.active
     ws.title = "M2 現金對帳"
     ws.append(["場站代碼", "場站名稱", "收費員", "現金業績", "銀行入帳", "差異", "狀態"])
-    for r in stub_m2_results():
+    for r in await get_m2_results(db, period_start=period_start, period_end=period_end):
         ws.append([
             r["venue_code"], r["venue_name"], r["collector_name"],
             r["cash_amount"], r["bank_amount"], r["diff_amount"], r["status"],

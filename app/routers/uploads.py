@@ -47,6 +47,8 @@ async def upload_files(
                     "job_id": accepted_doc["job_id"],
                     "filename": accepted_doc["filename"],
                     "status": accepted_doc["status"],
+                    "message": accepted_doc.get("message"),
+                    "row_count": accepted_doc.get("row_count"),
                     "gridfs_id": accepted_doc["gridfs_id"],
                 }
             )

@@ -1,7 +1,7 @@
 # 宏達停車場對帳系統 — 後端
 
 FastAPI + **MongoDB Atlas** + **GridFS**（檔案存 Mongo，不依賴 S3）。
-**Phase 1 / Stage 1 骨架版**：所有 endpoint 已可呼叫、檔案上傳會落地到 GridFS、Parser 與真正的對帳引擎留待 Stage 2/3 接入。
+所有 endpoint 已可呼叫，檔案上傳會落地到 GridFS，M1/M2/M3 查詢與報表匯出會讀取 MongoDB collections。
 
 ---
 
@@ -84,7 +84,7 @@ backend/
 │   │   ├── slot_config.py           # 17 個 slot 定義
 │   │   ├── upload_service.py        # 接檔案 + 查重 + 落 GridFS
 │   │   ├── upload_status_service.py # 組裝 GET /upload-status
-│   │   └── reconcile_service.py     # 對帳骨架 + stub 結果
+│   │   └── reconcile_service.py     # 對帳 job + MongoDB 結果查詢
 │   ├── worker.py                    # 背景 worker（輪詢 queued → 模擬解析）
 │   └── seed.py                      # 12 場站 + 5 種費率示範資料
 ├── render.yaml                      # Render Blueprint
@@ -169,72 +169,13 @@ python -m app.seed   # 連到 Atlas、寫入 12 場站 + 5 費率
 
 # 5. 前端串接教學
 
-## Step 5.1 — 替換 `src/api/index.js`
+## Step 5.1 — 前端 API 設定
 
-打開 `frontend/src/api/index.js`，把現在的 `export ... from './mock'` 整段換成下面：
+前端已內建 `frontend/src/api/http.js`，開發環境預設 `VITE_USE_MOCK=false` 並會串 `VITE_API_BASE`。本機後端請設定：
 
-```js
-import axios from 'axios'
-
-const http = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE || 'http://localhost:8000/api/v1',
-  timeout: 30000,
-})
-
-// 後端統一回 { success, data } 或 { success, error }；
-// 這裡剝掉外層，讓 store/view 不需要改。
-const unwrap = (p) => p.then((r) => {
-  const body = r.data
-  if (body && body.success === false) {
-    const err = body.error || {}
-    throw new Error(`[${err.code || 'API_ERROR'}] ${err.message || '未知錯誤'}`)
-  }
-  return body?.data ?? body
-})
-
-export const fetchUploadStatus = (period) =>
-  unwrap(http.get('/upload-status', { params: { period } }))
-
-export const uploadFile = (slotKey, filename) => {
-  // 把 slotKey 拆回 source_type + source_name
-  const [source_type, ...rest] = slotKey.split('_')
-  const source_name = rest.join('_')
-  const fd = new FormData()
-  fd.append('source_type', source_type)
-  fd.append('source_name', source_name)
-  fd.append('period_start', '2026-03-01')
-  fd.append('period_end', '2026-03-31')
-  // 用 Blob 模擬檔案，正式情境要改成 <input type="file"> 拿到的 File
-  fd.append('files', new Blob([`mock content for ${filename}`]), filename)
-  return unwrap(http.post('/uploads', fd))
-}
-
-export const fillAllMock = () => Promise.resolve()  // 後端沒這個 demo 端點
-
-export const submitReconciliation = ({ periodStart, periodEnd }) =>
-  Promise.all([
-    unwrap(http.post('/reconcile/m1', { period_start: periodStart, period_end: periodEnd })),
-    unwrap(http.post('/reconcile/m2', { period_start: periodStart, period_end: periodEnd })),
-    unwrap(http.post('/reconcile/m3', { period_start: periodStart, period_end: periodEnd })),
-  ]).then(([m1, m2, m3]) => ({
-    period_start: periodStart,
-    period_end: periodEnd,
-    jobs: { m1: { job_id: m1.job_id }, m2: { job_id: m2.job_id }, m3: { job_id: m3.job_id } },
-  }))
-
-export const fetchJobStatus = (jobId) => unwrap(http.get(`/jobs/${jobId}`))
-export const fetchJobIssues = (jobId) => unwrap(http.get(`/jobs/${jobId}/issues`))
-
-export const fetchM1 = () =>
-  unwrap(http.get('/reconcile/m1', { params: { period_start: '2026-03-01', period_end: '2026-03-31' } }))
-export const fetchM2 = () =>
-  unwrap(http.get('/reconcile/m2', { params: { period_start: '2026-03-01', period_end: '2026-03-31' } }))
-export const fetchM3 = () => unwrap(http.get('/reconcile/m3'))
-
-export const resolveException = (id, payload) => unwrap(http.patch(`/reconcile/m3/${id}`, payload))
-
-// 重置：後端目前沒這個端點，前端 reload 即可
-export const resetMockState = () => {}
+```bash
+VITE_USE_MOCK=false
+VITE_API_BASE=http://localhost:8000/api/v1
 ```
 
 > 小細節：Render free 第一次喚醒會慢，可以加一個 axios interceptor 在 401/503 時 retry。
