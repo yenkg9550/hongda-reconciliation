@@ -15,7 +15,7 @@ from app.core.config import settings
 from app.db.collections import ensure_indexes
 from app.db.mongo import close as close_mongo
 from app.db.mongo import get_db, ping
-from app.routers import jobs, master, reconcile, reports, uploads
+from app.routers import admin, jobs, master, reconcile, reports, uploads
 from app.schemas.common import error_envelope
 
 logger = logging.getLogger(__name__)
@@ -56,6 +56,7 @@ def create_app() -> FastAPI:
     app.include_router(reconcile.router, prefix=settings.api_v1_prefix, tags=["reconcile"])
     app.include_router(master.router, prefix=settings.api_v1_prefix, tags=["master"])
     app.include_router(reports.router, prefix=settings.api_v1_prefix, tags=["reports"])
+    app.include_router(admin.router, prefix=settings.api_v1_prefix, tags=["admin"])
 
     @app.get("/", tags=["meta"], summary="Health check (lightweight, for Render port detection)")
     async def root():

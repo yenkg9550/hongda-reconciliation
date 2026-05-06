@@ -19,7 +19,17 @@ router = APIRouter()
 
 @router.post("/uploads", summary="上傳報表檔案（多檔，存到 GridFS）")
 async def upload_files(
-    source_type: Annotated[Literal["vendor", "payment", "bank", "cash"], Form()],
+    source_type: Annotated[
+        Literal[
+            "vendor",
+            "payment",
+            "bank",
+            "cash",
+            "vendor_yongxi",
+            "vendor_fuer",
+        ],
+        Form(),
+    ],
     source_name: Annotated[str, Form()],
     period_start: Annotated[date, Form()],
     period_end: Annotated[date, Form()],

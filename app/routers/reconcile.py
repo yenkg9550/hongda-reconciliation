@@ -90,11 +90,16 @@ async def trigger_m3(req: ReconcileTriggerRequest):
 
 @router.get("/reconcile/m3", summary="查詢 M3 例外清單")
 async def get_m3(
+    period_start: date | None = Query(None),
+    period_end: date | None = Query(None),
     venue_code: str | None = Query(None),
     resolved: bool | None = Query(None),
 ):
     db = get_db()
     query: dict = {}
+    if period_start and period_end:
+        query["period_start"] = period_start.isoformat()
+        query["period_end"] = period_end.isoformat()
     if venue_code:
         query["venue_code"] = venue_code
     if resolved is not None:

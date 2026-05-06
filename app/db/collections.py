@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 
 # Collection 名稱
 VENUES = "venues"
+VENUE_MAPPINGS = "venue_mappings"
 FEE_RATES = "fee_rates"
 UPLOAD_JOBS = "upload_jobs"
 VENDOR_TX = "vendor_transactions"
@@ -31,6 +32,7 @@ PAYMENT_TX = "payment_transactions"
 BANK_ENTRIES = "bank_entries"
 CASH_RECORDS = "cash_records"
 M1_RESULTS = "m1_results"
+M1_DETAILS = "m1_details"
 M2_RESULTS = "m2_results"
 M3_EXCEPTIONS = "m3_exceptions"
 
@@ -73,6 +75,14 @@ INDEX_SPECS: dict[str, list[tuple[Any, dict]]] = {
             {"name": "ix_period_venue"},
         ),
     ],
+    M1_DETAILS: [
+        (
+            [("period_start", ASCENDING), ("period_end", ASCENDING)],
+            {"name": "ix_period"},
+        ),
+        ([("status", ASCENDING)], {"name": "ix_status"}),
+        ([("venue_code", ASCENDING)], {"name": "ix_venue"}),
+    ],
     M2_RESULTS: [
         (
             [("period_start", ASCENDING), ("period_end", ASCENDING), ("venue_code", ASCENDING)],
@@ -85,6 +95,14 @@ INDEX_SPECS: dict[str, list[tuple[Any, dict]]] = {
     ],
     FEE_RATES: [
         ([("payment_type", ASCENDING)], {"name": "ix_payment_type"}),
+        (
+            [("vendor_code", ASCENDING), ("payment_type", ASCENDING), ("effective_date", ASCENDING)],
+            {"name": "ix_vendor_pay_eff"},
+        ),
+    ],
+    VENUE_MAPPINGS: [
+        ([("source", ASCENDING), ("source_name", ASCENDING)], {"name": "ix_source_name"}),
+        ([("venue_code", ASCENDING)], {"name": "ix_venue_code"}),
     ],
 }
 

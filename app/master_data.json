@@ -1,0 +1,1738 @@
+{
+  "venues": [
+    {
+      "venue_code": "001",
+      "venue_name": "北城",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160000",
+      "updated_at": "2026-05-06 06:02:01.160005"
+    },
+    {
+      "venue_code": "002",
+      "venue_name": "民族",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160007",
+      "updated_at": "2026-05-06 06:02:01.160008"
+    },
+    {
+      "venue_code": "005",
+      "venue_name": "關渡",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160010",
+      "updated_at": "2026-05-06 06:02:01.160011"
+    },
+    {
+      "venue_code": "007",
+      "venue_name": "台大",
+      "vendor_code": "shuoyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160013",
+      "updated_at": "2026-05-06 06:02:01.160014"
+    },
+    {
+      "venue_code": "009",
+      "venue_name": "民義",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160015",
+      "updated_at": "2026-05-06 06:02:01.160016"
+    },
+    {
+      "venue_code": "014",
+      "venue_name": "內湖",
+      "vendor_code": "fuer_ticket",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160018",
+      "updated_at": "2026-05-06 06:02:01.160019"
+    },
+    {
+      "venue_code": "016",
+      "venue_name": "安平",
+      "vendor_code": "fuer_ticket",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160020",
+      "updated_at": "2026-05-06 06:02:01.160021"
+    },
+    {
+      "venue_code": "017",
+      "venue_name": "安坑",
+      "vendor_code": "fuer_ticket",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160023",
+      "updated_at": "2026-05-06 06:02:01.160024"
+    },
+    {
+      "venue_code": "019",
+      "venue_name": "陽光",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160025",
+      "updated_at": "2026-05-06 06:02:01.160026"
+    },
+    {
+      "venue_code": "020",
+      "venue_name": "柴埕",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160027",
+      "updated_at": "2026-05-06 06:02:01.160029"
+    },
+    {
+      "venue_code": "021",
+      "venue_name": "中平",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160030",
+      "updated_at": "2026-05-06 06:02:01.160031"
+    },
+    {
+      "venue_code": "022",
+      "venue_name": "雙十",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160032",
+      "updated_at": "2026-05-06 06:02:01.160034"
+    },
+    {
+      "venue_code": "027",
+      "venue_name": "五谷王",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160035",
+      "updated_at": "2026-05-06 06:02:01.160036"
+    },
+    {
+      "venue_code": "028",
+      "venue_name": "梅花湖",
+      "vendor_code": "fuer_ticket",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160037",
+      "updated_at": "2026-05-06 06:02:01.160038"
+    },
+    {
+      "venue_code": "029",
+      "venue_name": "成泰",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160040",
+      "updated_at": "2026-05-06 06:02:01.160041"
+    },
+    {
+      "venue_code": "030",
+      "venue_name": "昌德",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160042",
+      "updated_at": "2026-05-06 06:02:01.160043"
+    },
+    {
+      "venue_code": "032",
+      "venue_name": "五福",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160045",
+      "updated_at": "2026-05-06 06:02:01.160046"
+    },
+    {
+      "venue_code": "033",
+      "venue_name": "湖口",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160047",
+      "updated_at": "2026-05-06 06:02:01.160048"
+    },
+    {
+      "venue_code": "034",
+      "venue_name": "神農二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160049",
+      "updated_at": "2026-05-06 06:02:01.160051"
+    },
+    {
+      "venue_code": "034-5",
+      "venue_name": "神農五",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160052",
+      "updated_at": "2026-05-06 06:02:01.160053"
+    },
+    {
+      "venue_code": "036",
+      "venue_name": "富貴",
+      "vendor_code": "fuer_ticket",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160054",
+      "updated_at": "2026-05-06 06:02:01.160055"
+    },
+    {
+      "venue_code": "039",
+      "venue_name": "慈濟",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160057",
+      "updated_at": "2026-05-06 06:02:01.160058"
+    },
+    {
+      "venue_code": "040",
+      "venue_name": "承鋐",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160059",
+      "updated_at": "2026-05-06 06:02:01.160060"
+    },
+    {
+      "venue_code": "042",
+      "venue_name": "松仁",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160062",
+      "updated_at": "2026-05-06 06:02:01.160063"
+    },
+    {
+      "venue_code": "043",
+      "venue_name": "環中",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160064",
+      "updated_at": "2026-05-06 06:02:01.160065"
+    },
+    {
+      "venue_code": "045",
+      "venue_name": "經國",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160067",
+      "updated_at": "2026-05-06 06:02:01.160068"
+    },
+    {
+      "venue_code": "047",
+      "venue_name": "昌義",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160069",
+      "updated_at": "2026-05-06 06:02:01.160070"
+    },
+    {
+      "venue_code": "051",
+      "venue_name": "大漢",
+      "vendor_code": "shuoyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160072",
+      "updated_at": "2026-05-06 06:02:01.160073"
+    },
+    {
+      "venue_code": "053",
+      "venue_name": "華江一",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160074",
+      "updated_at": "2026-05-06 06:02:01.160075"
+    },
+    {
+      "venue_code": "054",
+      "venue_name": "華江二",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160077",
+      "updated_at": "2026-05-06 06:02:01.160078"
+    },
+    {
+      "venue_code": "055",
+      "venue_name": "大衛道",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160079",
+      "updated_at": "2026-05-06 06:02:01.160080"
+    },
+    {
+      "venue_code": "056",
+      "venue_name": "鶯歌",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160082",
+      "updated_at": "2026-05-06 06:02:01.160083"
+    },
+    {
+      "venue_code": "059",
+      "venue_name": "才金",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160084",
+      "updated_at": "2026-05-06 06:02:01.160085"
+    },
+    {
+      "venue_code": "060",
+      "venue_name": "樂利",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160086",
+      "updated_at": "2026-05-06 06:02:01.160088"
+    },
+    {
+      "venue_code": "061",
+      "venue_name": "員山",
+      "vendor_code": "fuer_ticket",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160089",
+      "updated_at": "2026-05-06 06:02:01.160090"
+    },
+    {
+      "venue_code": "062",
+      "venue_name": "倉前",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160091",
+      "updated_at": "2026-05-06 06:02:01.160092"
+    },
+    {
+      "venue_code": "064",
+      "venue_name": "富貴二",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160094",
+      "updated_at": "2026-05-06 06:02:01.160095"
+    },
+    {
+      "venue_code": "065",
+      "venue_name": "晶冠",
+      "vendor_code": "quanying",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160096",
+      "updated_at": "2026-05-06 06:02:01.160097"
+    },
+    {
+      "venue_code": "066",
+      "venue_name": "永利",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160099",
+      "updated_at": "2026-05-06 06:02:01.160100"
+    },
+    {
+      "venue_code": "067",
+      "venue_name": "興林",
+      "vendor_code": "quanying",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160101",
+      "updated_at": "2026-05-06 06:02:01.160102"
+    },
+    {
+      "venue_code": "068",
+      "venue_name": "清傳二",
+      "vendor_code": "quanying",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160104",
+      "updated_at": "2026-05-06 06:02:01.160105"
+    },
+    {
+      "venue_code": "069",
+      "venue_name": "五結",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160106",
+      "updated_at": "2026-05-06 06:02:01.160107"
+    },
+    {
+      "venue_code": "070",
+      "venue_name": "幸福",
+      "vendor_code": "shuoyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160108",
+      "updated_at": "2026-05-06 06:02:01.160110"
+    },
+    {
+      "venue_code": "071",
+      "venue_name": "中央",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160111",
+      "updated_at": "2026-05-06 06:02:01.160112"
+    },
+    {
+      "venue_code": "072",
+      "venue_name": "港墘",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160113",
+      "updated_at": "2026-05-06 06:02:01.160115"
+    },
+    {
+      "venue_code": "073",
+      "venue_name": "八里",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160116",
+      "updated_at": "2026-05-06 06:02:01.160117"
+    },
+    {
+      "venue_code": "074",
+      "venue_name": "縣政",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160118",
+      "updated_at": "2026-05-06 06:02:01.160119"
+    },
+    {
+      "venue_code": "075",
+      "venue_name": "思源",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160121",
+      "updated_at": "2026-05-06 06:02:01.160122"
+    },
+    {
+      "venue_code": "076",
+      "venue_name": "昌吉",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160123",
+      "updated_at": "2026-05-06 06:02:01.160124"
+    },
+    {
+      "venue_code": "077",
+      "venue_name": "僑中",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160126",
+      "updated_at": "2026-05-06 06:02:01.160127"
+    },
+    {
+      "venue_code": "078",
+      "venue_name": "大愛二",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160128",
+      "updated_at": "2026-05-06 06:02:01.160129"
+    },
+    {
+      "venue_code": "079",
+      "venue_name": "明德",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160131",
+      "updated_at": "2026-05-06 06:02:01.160132"
+    },
+    {
+      "venue_code": "080",
+      "venue_name": "立德三",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160133",
+      "updated_at": "2026-05-06 06:02:01.160134"
+    },
+    {
+      "venue_code": "081",
+      "venue_name": "大愛一",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160135",
+      "updated_at": "2026-05-06 06:02:01.160137"
+    },
+    {
+      "venue_code": "082",
+      "venue_name": "神農三",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160138",
+      "updated_at": "2026-05-06 06:02:01.160139"
+    },
+    {
+      "venue_code": "083",
+      "venue_name": "神農四",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160140",
+      "updated_at": "2026-05-06 06:02:01.160141"
+    },
+    {
+      "venue_code": "084",
+      "venue_name": "樂學",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160143",
+      "updated_at": "2026-05-06 06:02:01.160144"
+    },
+    {
+      "venue_code": "085",
+      "venue_name": "清傳一",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160145",
+      "updated_at": "2026-05-06 06:02:01.160146"
+    },
+    {
+      "venue_code": "086",
+      "venue_name": "敦富",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160148",
+      "updated_at": "2026-05-06 06:02:01.160149"
+    },
+    {
+      "venue_code": "088",
+      "venue_name": "學士",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160150",
+      "updated_at": "2026-05-06 06:02:01.160151"
+    },
+    {
+      "venue_code": "089",
+      "venue_name": "永華",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160153",
+      "updated_at": "2026-05-06 06:02:01.160154"
+    },
+    {
+      "venue_code": "090",
+      "venue_name": "礁溪",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160155",
+      "updated_at": "2026-05-06 06:02:01.160158"
+    },
+    {
+      "venue_code": "091",
+      "venue_name": "華平",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160159",
+      "updated_at": "2026-05-06 06:02:01.160161"
+    },
+    {
+      "venue_code": "092",
+      "venue_name": "仁愛",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160162",
+      "updated_at": "2026-05-06 06:02:01.160163"
+    },
+    {
+      "venue_code": "093",
+      "venue_name": "聯發",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160164",
+      "updated_at": "2026-05-06 06:02:01.160165"
+    },
+    {
+      "venue_code": "094",
+      "venue_name": "福址",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160167",
+      "updated_at": "2026-05-06 06:02:01.160168"
+    },
+    {
+      "venue_code": "095",
+      "venue_name": "興德二",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160169",
+      "updated_at": "2026-05-06 06:02:01.160170"
+    },
+    {
+      "venue_code": "096",
+      "venue_name": "基河",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160172",
+      "updated_at": "2026-05-06 06:02:01.160173"
+    },
+    {
+      "venue_code": "200",
+      "venue_name": "大同二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160174",
+      "updated_at": "2026-05-06 06:02:01.160175"
+    },
+    {
+      "venue_code": "201",
+      "venue_name": "中山首府",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160176",
+      "updated_at": "2026-05-06 06:02:01.160178"
+    },
+    {
+      "venue_code": "207",
+      "venue_name": "西園",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160179",
+      "updated_at": "2026-05-06 06:02:01.160180"
+    },
+    {
+      "venue_code": "209",
+      "venue_name": "延平北",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160181",
+      "updated_at": "2026-05-06 06:02:01.160182"
+    },
+    {
+      "venue_code": "211",
+      "venue_name": "長春",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160184",
+      "updated_at": "2026-05-06 06:02:01.160185"
+    },
+    {
+      "venue_code": "212",
+      "venue_name": "洲子",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160186",
+      "updated_at": "2026-05-06 06:02:01.160187"
+    },
+    {
+      "venue_code": "215",
+      "venue_name": "雲冠天下",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160188",
+      "updated_at": "2026-05-06 06:02:01.160190"
+    },
+    {
+      "venue_code": "216",
+      "venue_name": "新明",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160191",
+      "updated_at": "2026-05-06 06:02:01.160192"
+    },
+    {
+      "venue_code": "218",
+      "venue_name": "龍鳳",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160193",
+      "updated_at": "2026-05-06 06:02:01.160194"
+    },
+    {
+      "venue_code": "224",
+      "venue_name": "洛陽",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160196",
+      "updated_at": "2026-05-06 06:02:01.160197"
+    },
+    {
+      "venue_code": "228",
+      "venue_name": "文化",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160198",
+      "updated_at": "2026-05-06 06:02:01.160199"
+    },
+    {
+      "venue_code": "229",
+      "venue_name": "台中正氣",
+      "vendor_code": "shuoyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160201",
+      "updated_at": "2026-05-06 06:02:01.160202"
+    },
+    {
+      "venue_code": "233",
+      "venue_name": "南福",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160203",
+      "updated_at": "2026-05-06 06:02:01.160204"
+    },
+    {
+      "venue_code": "235",
+      "venue_name": "玫瑰",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160206",
+      "updated_at": "2026-05-06 06:02:01.160207"
+    },
+    {
+      "venue_code": "237-1",
+      "venue_name": "裕生一",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160208",
+      "updated_at": "2026-05-06 06:02:01.160209"
+    },
+    {
+      "venue_code": "237-2",
+      "venue_name": "裕生二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160210",
+      "updated_at": "2026-05-06 06:02:01.160212"
+    },
+    {
+      "venue_code": "242",
+      "venue_name": "忠孝",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160213",
+      "updated_at": "2026-05-06 06:02:01.160214"
+    },
+    {
+      "venue_code": "242-2",
+      "venue_name": "忠孝二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160215",
+      "updated_at": "2026-05-06 06:02:01.160216"
+    },
+    {
+      "venue_code": "242-4",
+      "venue_name": "忠孝四",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160218",
+      "updated_at": "2026-05-06 06:02:01.160219"
+    },
+    {
+      "venue_code": "242-5",
+      "venue_name": "忠孝五",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160220",
+      "updated_at": "2026-05-06 06:02:01.160221"
+    },
+    {
+      "venue_code": "244",
+      "venue_name": "中原",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160223",
+      "updated_at": "2026-05-06 06:02:01.160224"
+    },
+    {
+      "venue_code": "245",
+      "venue_name": "松隆",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160225",
+      "updated_at": "2026-05-06 06:02:01.160226"
+    },
+    {
+      "venue_code": "246",
+      "venue_name": "淡江",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160227",
+      "updated_at": "2026-05-06 06:02:01.160229"
+    },
+    {
+      "venue_code": "249",
+      "venue_name": "和平一",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160230",
+      "updated_at": "2026-05-06 06:02:01.160231"
+    },
+    {
+      "venue_code": "250",
+      "venue_name": "新民",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160232",
+      "updated_at": "2026-05-06 06:02:01.160233"
+    },
+    {
+      "venue_code": "251",
+      "venue_name": "桃鶯",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160235",
+      "updated_at": "2026-05-06 06:02:01.160236"
+    },
+    {
+      "venue_code": "252",
+      "venue_name": "文林",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160237",
+      "updated_at": "2026-05-06 06:02:01.160238"
+    },
+    {
+      "venue_code": "253",
+      "venue_name": "仁義二",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160239",
+      "updated_at": "2026-05-06 06:02:01.160241"
+    },
+    {
+      "venue_code": "254",
+      "venue_name": "中正",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160242",
+      "updated_at": "2026-05-06 06:02:01.160243"
+    },
+    {
+      "venue_code": "255",
+      "venue_name": "吉利",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160244",
+      "updated_at": "2026-05-06 06:02:01.160246"
+    },
+    {
+      "venue_code": "256",
+      "venue_name": "興林二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160247",
+      "updated_at": "2026-05-06 06:02:01.160248"
+    },
+    {
+      "venue_code": "258",
+      "venue_name": "南園",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160249",
+      "updated_at": "2026-05-06 06:02:01.160250"
+    },
+    {
+      "venue_code": "259",
+      "venue_name": "豐富",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160252",
+      "updated_at": "2026-05-06 06:02:01.160253"
+    },
+    {
+      "venue_code": "260",
+      "venue_name": "興德",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160254",
+      "updated_at": "2026-05-06 06:02:01.160255"
+    },
+    {
+      "venue_code": "261",
+      "venue_name": "頂埔",
+      "vendor_code": "microprogram",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160257",
+      "updated_at": "2026-05-06 06:02:01.160258"
+    },
+    {
+      "venue_code": "262",
+      "venue_name": "中華",
+      "vendor_code": "yongxi",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160259",
+      "updated_at": "2026-05-06 06:02:01.160260"
+    },
+    {
+      "venue_code": "263",
+      "venue_name": "僑中二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160263",
+      "updated_at": "2026-05-06 06:02:01.160264"
+    },
+    {
+      "venue_code": "264",
+      "venue_name": "僑中三",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160265",
+      "updated_at": "2026-05-06 06:02:01.160266"
+    },
+    {
+      "venue_code": "267",
+      "venue_name": "德厚",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160268",
+      "updated_at": "2026-05-06 06:02:01.160269"
+    },
+    {
+      "venue_code": "268",
+      "venue_name": "頂文一",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160270",
+      "updated_at": "2026-05-06 06:02:01.160271"
+    },
+    {
+      "venue_code": "269",
+      "venue_name": "頂文二",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160272",
+      "updated_at": "2026-05-06 06:02:01.160273"
+    },
+    {
+      "venue_code": "270",
+      "venue_name": "尖福",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160275",
+      "updated_at": "2026-05-06 06:02:01.160276"
+    },
+    {
+      "venue_code": "271",
+      "venue_name": "尖福二",
+      "vendor_code": "fuer_car",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160277",
+      "updated_at": "2026-05-06 06:02:01.160278"
+    },
+    {
+      "venue_code": "272",
+      "venue_name": "賢三",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160280",
+      "updated_at": "2026-05-06 06:02:01.160281"
+    },
+    {
+      "venue_code": "273",
+      "venue_name": "裕農二",
+      "vendor_code": "gangyu",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160282",
+      "updated_at": "2026-05-06 06:02:01.160283"
+    },
+    {
+      "venue_code": "274",
+      "venue_name": "永安",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160285",
+      "updated_at": "2026-05-06 06:02:01.160286"
+    },
+    {
+      "venue_code": "275",
+      "venue_name": "新民二",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160287",
+      "updated_at": "2026-05-06 06:02:01.160288"
+    },
+    {
+      "venue_code": "276",
+      "venue_name": "廣福",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160289",
+      "updated_at": "2026-05-06 06:02:01.160291"
+    },
+    {
+      "venue_code": "277",
+      "venue_name": "新泰",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160292",
+      "updated_at": "2026-05-06 06:02:01.160293"
+    },
+    {
+      "venue_code": "278",
+      "venue_name": "首都",
+      "vendor_code": "fetc",
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160294",
+      "updated_at": "2026-05-06 06:02:01.160296"
+    },
+    {
+      "venue_code": "400",
+      "venue_name": "民義套房",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160297",
+      "updated_at": "2026-05-06 06:02:01.160298"
+    },
+    {
+      "venue_code": "401",
+      "venue_name": "長安套房",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160299",
+      "updated_at": "2026-05-06 06:02:01.160300"
+    },
+    {
+      "venue_code": "404",
+      "venue_name": "中山套房",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160302",
+      "updated_at": "2026-05-06 06:02:01.160303"
+    },
+    {
+      "venue_code": "406",
+      "venue_name": "長安37套房",
+      "vendor_code": null,
+      "manager": null,
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:01.160304",
+      "updated_at": "2026-05-06 06:02:01.160305"
+    }
+  ],
+  "venue_mappings": [
+    {
+      "id": 1,
+      "source": "fetc",
+      "source_name": "P0900012",
+      "venue_code": "001",
+      "venue_name": "北城",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749215",
+      "updated_at": "2026-05-06 06:02:03.749219"
+    },
+    {
+      "id": 2,
+      "source": "easycard",
+      "source_name": "08760425",
+      "venue_code": "005",
+      "venue_name": "關渡",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749220",
+      "updated_at": "2026-05-06 06:02:03.749222"
+    },
+    {
+      "id": 3,
+      "source": "easycard",
+      "source_name": "08041180",
+      "venue_code": "007",
+      "venue_name": "台大",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749223",
+      "updated_at": "2026-05-06 06:02:03.749224"
+    },
+    {
+      "id": 4,
+      "source": "easycard_charge",
+      "source_name": "08210491",
+      "venue_code": "007",
+      "venue_name": "台大",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749226",
+      "updated_at": "2026-05-06 06:02:03.749227"
+    },
+    {
+      "id": 5,
+      "source": "easycard",
+      "source_name": "08210487",
+      "venue_code": "028",
+      "venue_name": "梅花湖",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749228",
+      "updated_at": "2026-05-06 06:02:03.749229"
+    },
+    {
+      "id": 6,
+      "source": "linepay",
+      "source_name": "hd_28912041_12.POS",
+      "venue_code": "028",
+      "venue_name": "梅花湖",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749231",
+      "updated_at": "2026-05-06 06:02:03.749232"
+    },
+    {
+      "id": 7,
+      "source": "fetc",
+      "source_name": "P0900001",
+      "venue_code": "029",
+      "venue_name": "成泰",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749234",
+      "updated_at": "2026-05-06 06:02:03.749235"
+    },
+    {
+      "id": 8,
+      "source": "easycard",
+      "source_name": "08760012",
+      "venue_code": "030",
+      "venue_name": "昌德",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749236",
+      "updated_at": "2026-05-06 06:02:03.749237"
+    },
+    {
+      "id": 9,
+      "source": "fetc",
+      "source_name": "P0900020",
+      "venue_code": "032",
+      "venue_name": "五福",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749239",
+      "updated_at": "2026-05-06 06:02:03.749240"
+    },
+    {
+      "id": 10,
+      "source": "fetc",
+      "source_name": "P0900005",
+      "venue_code": "039",
+      "venue_name": "慈濟",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749241",
+      "updated_at": "2026-05-06 06:02:03.749242"
+    },
+    {
+      "id": 11,
+      "source": "easycard",
+      "source_name": "08690125",
+      "venue_code": "042",
+      "venue_name": "松仁",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749244",
+      "updated_at": "2026-05-06 06:02:03.749245"
+    },
+    {
+      "id": 12,
+      "source": "easywallet",
+      "source_name": "hd28912041",
+      "venue_code": "042",
+      "venue_name": "松仁",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749246",
+      "updated_at": "2026-05-06 06:02:03.749247"
+    },
+    {
+      "id": 13,
+      "source": "linepay",
+      "source_name": "1CHT_28912041.POS",
+      "venue_code": "042",
+      "venue_name": "松仁",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749248",
+      "updated_at": "2026-05-06 06:02:03.749250"
+    },
+    {
+      "id": 14,
+      "source": "jkopay",
+      "source_name": "hd88122210",
+      "venue_code": "042",
+      "venue_name": "松仁",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749251",
+      "updated_at": "2026-05-06 06:02:03.749252"
+    },
+    {
+      "id": 15,
+      "source": "fetc",
+      "source_name": "P0900009",
+      "venue_code": "045",
+      "venue_name": "經國",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749253",
+      "updated_at": "2026-05-06 06:02:03.749254"
+    },
+    {
+      "id": 16,
+      "source": "fetc",
+      "source_name": "P0900015",
+      "venue_code": "047",
+      "venue_name": "昌義",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749256",
+      "updated_at": "2026-05-06 06:02:03.749257"
+    },
+    {
+      "id": 17,
+      "source": "fetc",
+      "source_name": "P0900022",
+      "venue_code": "053",
+      "venue_name": "華江一",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749258",
+      "updated_at": "2026-05-06 06:02:03.749259"
+    },
+    {
+      "id": 18,
+      "source": "fetc",
+      "source_name": "P0900023",
+      "venue_code": "054",
+      "venue_name": "華江二",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749261",
+      "updated_at": "2026-05-06 06:02:03.749262"
+    },
+    {
+      "id": 19,
+      "source": "easycard",
+      "source_name": "08041175",
+      "venue_code": "066",
+      "venue_name": "永利",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749263",
+      "updated_at": "2026-05-06 06:02:03.749264"
+    },
+    {
+      "id": 20,
+      "source": "linepay",
+      "source_name": "ipa_28912041.POS",
+      "venue_code": "066",
+      "venue_name": "永利",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749265",
+      "updated_at": "2026-05-06 06:02:03.749267"
+    },
+    {
+      "id": 21,
+      "source": "easycard",
+      "source_name": "08041189",
+      "venue_code": "070",
+      "venue_name": "幸福",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749268",
+      "updated_at": "2026-05-06 06:02:03.749269"
+    },
+    {
+      "id": 22,
+      "source": "linepay",
+      "source_name": "ipa_28912041_1.POS",
+      "venue_code": "070",
+      "venue_name": "幸福",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749270",
+      "updated_at": "2026-05-06 06:02:03.749272"
+    },
+    {
+      "id": 23,
+      "source": "easycard",
+      "source_name": "08061088",
+      "venue_code": "071",
+      "venue_name": "中央",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749273",
+      "updated_at": "2026-05-06 06:02:03.749274"
+    },
+    {
+      "id": 24,
+      "source": "fetc",
+      "source_name": "P0900024",
+      "venue_code": "072",
+      "venue_name": "港墘",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749275",
+      "updated_at": "2026-05-06 06:02:03.749277"
+    },
+    {
+      "id": 25,
+      "source": "fetc",
+      "source_name": "P0900025",
+      "venue_code": "074",
+      "venue_name": "縣政",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749278",
+      "updated_at": "2026-05-06 06:02:03.749279"
+    },
+    {
+      "id": 26,
+      "source": "easycard",
+      "source_name": "08410044",
+      "venue_code": "076",
+      "venue_name": "昌吉",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749280",
+      "updated_at": "2026-05-06 06:02:03.749282"
+    },
+    {
+      "id": 27,
+      "source": "easycard",
+      "source_name": "08041343",
+      "venue_code": "079",
+      "venue_name": "明德",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749283",
+      "updated_at": "2026-05-06 06:02:03.749284"
+    },
+    {
+      "id": 28,
+      "source": "easycard",
+      "source_name": "08410047",
+      "venue_code": "080",
+      "venue_name": "立德三",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749285",
+      "updated_at": "2026-05-06 06:02:03.749286"
+    },
+    {
+      "id": 29,
+      "source": "linepay",
+      "source_name": "ipa_54015000.POS",
+      "venue_code": "080",
+      "venue_name": "立德三",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749288",
+      "updated_at": "2026-05-06 06:02:03.749289"
+    },
+    {
+      "id": 30,
+      "source": "linepay",
+      "source_name": "ipa_54015000.EC",
+      "venue_code": "080",
+      "venue_name": "立德三",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749290",
+      "updated_at": "2026-05-06 06:02:03.749291"
+    },
+    {
+      "id": 31,
+      "source": "easycard",
+      "source_name": "08760261",
+      "venue_code": "082",
+      "venue_name": "神農三",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749292",
+      "updated_at": "2026-05-06 06:02:03.749294"
+    },
+    {
+      "id": 32,
+      "source": "easycard",
+      "source_name": "08410064",
+      "venue_code": "084",
+      "venue_name": "樂學",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749295",
+      "updated_at": "2026-05-06 06:02:03.749296"
+    },
+    {
+      "id": 33,
+      "source": "linepay",
+      "source_name": "ipa_28912041_4.POS",
+      "venue_code": "084",
+      "venue_name": "樂學",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749297",
+      "updated_at": "2026-05-06 06:02:03.749298"
+    },
+    {
+      "id": 34,
+      "source": "easycard",
+      "source_name": "08410059",
+      "venue_code": "085",
+      "venue_name": "清傳一",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749300",
+      "updated_at": "2026-05-06 06:02:03.749301"
+    },
+    {
+      "id": 35,
+      "source": "linepay",
+      "source_name": "ipa_28912041_3.POS",
+      "venue_code": "085",
+      "venue_name": "清傳一",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749302",
+      "updated_at": "2026-05-06 06:02:03.749303"
+    },
+    {
+      "id": 36,
+      "source": "easycard",
+      "source_name": "08410063",
+      "venue_code": "089",
+      "venue_name": "永華",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749305",
+      "updated_at": "2026-05-06 06:02:03.749308"
+    },
+    {
+      "id": 37,
+      "source": "linepay",
+      "source_name": "ipa_28912041_6.PO",
+      "venue_code": "089",
+      "venue_name": "永華",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749309",
+      "updated_at": "2026-05-06 06:02:03.749310"
+    },
+    {
+      "id": 38,
+      "source": "easycard",
+      "source_name": "08690151",
+      "venue_code": "090",
+      "venue_name": "礁溪",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749311",
+      "updated_at": "2026-05-06 06:02:03.749313"
+    },
+    {
+      "id": 39,
+      "source": "easywallet",
+      "source_name": "hd28912041",
+      "venue_code": "090",
+      "venue_name": "礁溪",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749314",
+      "updated_at": "2026-05-06 06:02:03.749315"
+    },
+    {
+      "id": 40,
+      "source": "linepay",
+      "source_name": "1CHT_60208198.POS",
+      "venue_code": "090",
+      "venue_name": "礁溪",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749316",
+      "updated_at": "2026-05-06 06:02:03.749317"
+    },
+    {
+      "id": 41,
+      "source": "jkopay",
+      "source_name": "hd88122210",
+      "venue_code": "090",
+      "venue_name": "礁溪",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749319",
+      "updated_at": "2026-05-06 06:02:03.749320"
+    },
+    {
+      "id": 42,
+      "source": "easycard",
+      "source_name": "08410069",
+      "venue_code": "091",
+      "venue_name": "華平",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749321",
+      "updated_at": "2026-05-06 06:02:03.749322"
+    },
+    {
+      "id": 43,
+      "source": "linepay",
+      "source_name": "hd_28912041_10.POS",
+      "venue_code": "091",
+      "venue_name": "華平",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749323",
+      "updated_at": "2026-05-06 06:02:03.749325"
+    },
+    {
+      "id": 44,
+      "source": "easycard",
+      "source_name": "08410073",
+      "venue_code": "093",
+      "venue_name": "聯發",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749326",
+      "updated_at": "2026-05-06 06:02:03.749327"
+    },
+    {
+      "id": 45,
+      "source": "linepay",
+      "source_name": "hd_28912041_11.POS",
+      "venue_code": "093",
+      "venue_name": "聯發",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749328",
+      "updated_at": "2026-05-06 06:02:03.749329"
+    },
+    {
+      "id": 46,
+      "source": "fetc",
+      "source_name": "P0900030",
+      "venue_code": "094",
+      "venue_name": "福址",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749331",
+      "updated_at": "2026-05-06 06:02:03.749332"
+    },
+    {
+      "id": 47,
+      "source": "fetc",
+      "source_name": "P0900029",
+      "venue_code": "095",
+      "venue_name": "興德二",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749333",
+      "updated_at": "2026-05-06 06:02:03.749334"
+    },
+    {
+      "id": 48,
+      "source": "fetc",
+      "source_name": "P0900032",
+      "venue_code": "096",
+      "venue_name": "基河",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749336",
+      "updated_at": "2026-05-06 06:02:03.749337"
+    },
+    {
+      "id": 49,
+      "source": "easycard",
+      "source_name": "08760012",
+      "venue_code": "235",
+      "venue_name": "玫瑰",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749338",
+      "updated_at": "2026-05-06 06:02:03.749339"
+    },
+    {
+      "id": 50,
+      "source": "easycard",
+      "source_name": "08790226",
+      "venue_code": "237-1",
+      "venue_name": "裕生一",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749341",
+      "updated_at": "2026-05-06 06:02:03.749342"
+    },
+    {
+      "id": 51,
+      "source": "easycard",
+      "source_name": "08790227",
+      "venue_code": "237-2",
+      "venue_name": "裕生二",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749343",
+      "updated_at": "2026-05-06 06:02:03.749344"
+    },
+    {
+      "id": 52,
+      "source": "easycard",
+      "source_name": "08760258",
+      "venue_code": "259",
+      "venue_name": "豐富",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749346",
+      "updated_at": "2026-05-06 06:02:03.749347"
+    },
+    {
+      "id": 53,
+      "source": "easycard",
+      "source_name": "08760248",
+      "venue_code": "261",
+      "venue_name": "頂埔",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749348",
+      "updated_at": "2026-05-06 06:02:03.749349"
+    },
+    {
+      "id": 54,
+      "source": "easycard",
+      "source_name": "08410065",
+      "venue_code": "273",
+      "venue_name": "裕農二",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749350",
+      "updated_at": "2026-05-06 06:02:03.749352"
+    },
+    {
+      "id": 55,
+      "source": "linepay",
+      "source_name": "hd_28912041_9.POS",
+      "venue_code": "273",
+      "venue_name": "裕農二",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749353",
+      "updated_at": "2026-05-06 06:02:03.749354"
+    },
+    {
+      "id": 56,
+      "source": "fetc",
+      "source_name": "P0900028",
+      "venue_code": "275",
+      "venue_name": "新民二",
+      "is_active": 1,
+      "created_at": "2026-05-06 06:02:03.749355",
+      "updated_at": "2026-05-06 06:02:03.749356"
+    }
+  ],
+  "rates": [
+    {
+      "id": 1,
+      "payment_type": "easycard",
+      "vendor_code": "fuer_car",
+      "rate": 0.022,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.745982",
+      "updated_at": "2026-05-06 06:02:03.745987"
+    },
+    {
+      "id": 2,
+      "payment_type": "linepay",
+      "vendor_code": "fuer_car",
+      "rate": 0.022,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.745990",
+      "updated_at": "2026-05-06 06:02:03.745991"
+    },
+    {
+      "id": 3,
+      "payment_type": "easycard",
+      "vendor_code": "gangyu",
+      "rate": 0.016,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.745993",
+      "updated_at": "2026-05-06 06:02:03.745994"
+    },
+    {
+      "id": 4,
+      "payment_type": "linepay",
+      "vendor_code": "gangyu",
+      "rate": 0.022,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.745996",
+      "updated_at": "2026-05-06 06:02:03.745997"
+    },
+    {
+      "id": 5,
+      "payment_type": "easycard",
+      "vendor_code": "microprogram",
+      "rate": 0.016,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.745998",
+      "updated_at": "2026-05-06 06:02:03.745999"
+    },
+    {
+      "id": 6,
+      "payment_type": "linepay",
+      "vendor_code": "shuoyu",
+      "rate": 0.022,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.746001",
+      "updated_at": "2026-05-06 06:02:03.746002"
+    },
+    {
+      "id": 7,
+      "payment_type": "easycard",
+      "vendor_code": "yongxi",
+      "rate": 0.016,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.746003",
+      "updated_at": "2026-05-06 06:02:03.746004"
+    },
+    {
+      "id": 8,
+      "payment_type": "linepay",
+      "vendor_code": "yongxi",
+      "rate": 0.022,
+      "effective_date": "2026-01-01",
+      "created_at": "2026-05-06 06:02:03.746006",
+      "updated_at": "2026-05-06 06:02:03.746007"
+    }
+  ]
+}

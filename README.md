@@ -13,7 +13,8 @@ cd backend
 pip install -r requirements.txt
 cp .env.example .env  # 填 MONGODB_URI（Atlas 字串）
 python -m app.seed    # 種入示範資料
-uvicorn app.main:app --reload
+source .venv/bin/activate
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 # → http://localhost:8000/api/v1/docs
 
 # 部署到 Render
